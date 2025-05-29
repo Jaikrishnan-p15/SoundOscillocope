@@ -34,9 +34,7 @@ void loop() {
     float dominantFreq = findPeakFrequency(samples, SAMPLE_SIZE, SAMPLE_RATE);
 
     // Step 5: Display the Frequency
-    Serial.print("Detected Frequency: ");
-    Serial.print(dominantFreq);
-    Serial.println(" Hz");
+    Serial.println(dominantFreq);
 
     delay(500); // Delay between measurements
 }
